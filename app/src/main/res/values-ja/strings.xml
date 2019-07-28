@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">シンプル水準器</string>
+    <string name="enablePERCENT">勾配表示(%)</string>
+    <string name="PIP">PIP(ピクチャーインピクチャー)</string>
+    <string name="MODE">モード</string>
+    <string name="Horizontal">水平のみ</string>
+    <string name="Vertical">垂直のみ</string>
+    <string name="Mix">両方 (デフォルト)</string>
+    <string name="Lock">ロック</string>
+    <string name="Landscape">横画面</string>
+    <string name="noSensor">センサーから応答がありません。\nアプリを終了します。</string>
+    <string name="Error">エラー</string>
+    <string name="Yes">はい</string>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Simple Level</string>
+    <!--using int the menu-->
+    <string name="enablePERCENT">enable Slope Angle(%)</string>
+    <string name="Lock">Lock</string>
+    <string name="Landscape">Landscape</string>
+    <string name="PIP">PIP</string>
+    <string name="MODE">Mode</string>
+    <string name="Horizontal">Horizontal</string>
+    <string name="Vertical">Vertical</string>
+    <string name="Mix">Mix (default)</string>
+
+    <!-- using below strings when not supported gravity sensor -->
+    <string name="Error">Error</string>
+    <string name="noSensor">There is no response from the sensor. \nExit this application.</string>
+    <string name="Yes">Yes</string>
+
+    <!-- ads ID -->
+    <string name="adsAppID" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="adsBannerID" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
