@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+
+-keepclassmembers public class shindy_works.simplelevel.Processing_LEVEL_APP{public void pre();}
+-dontwarn shindy_works.simplelevel.Processing_LEVEL_APP.pre

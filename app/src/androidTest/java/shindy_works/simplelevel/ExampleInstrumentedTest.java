@@ -1,4 +1,4 @@
-package com.example.simplelevel;
+package shindy_works.simplelevel;
 
 import android.content.Context;
 

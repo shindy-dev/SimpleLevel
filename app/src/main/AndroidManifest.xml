@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.example.simplelevel">
+    package="shindy_works.simplelevel">
 
     <dist:module dist:instant="true" />
 
@@ -23,7 +23,7 @@
             android:value="@string/adsAppID" />
 
         <activity
-            android:name="com.example.simplelevel.MainActivity"
+            android:name="shindy_works.simplelevel.MainActivity"
             android:configChanges="screenSize|screenLayout|smallestScreenSize|orientation"
             android:launchMode="singleTop"
             android:resizeableActivity="false"

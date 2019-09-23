@@ -15,7 +15,10 @@
     <string name="noSensor">There is no response from the sensor. \nExit this application.</string>
     <string name="Yes">Yes</string>
 
+    <!-- ads ID (Sample)-->
+    <string name="adsAppSampleID" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="adsBannerSampleID" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <!-- ads ID -->
-    <string name="adsAppID" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="adsBannerID" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="adsAppID" translatable="false">ca-app-pub-9029159772270098~5980866131</string>
+    <string name="adsBannerID" translatable="false">ca-app-pub-9029159772270098/3350833363</string>
 </resources>

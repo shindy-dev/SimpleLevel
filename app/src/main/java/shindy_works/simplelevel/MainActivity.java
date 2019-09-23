@@ -1,4 +1,4 @@
-package com.example.simplelevel;
+package shindy_works.simplelevel;
 
 import android.app.PictureInPictureParams;
 import android.content.Context;
@@ -35,6 +35,7 @@ public final class MainActivity extends AppCompatActivity implements SensorEvent
     private Menu menu = null;
     private AdView adView = null;
 
+
     @Override
     protected final void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +63,7 @@ public final class MainActivity extends AppCompatActivity implements SensorEvent
         Ppanel.setId(R.id.processingPanel);
         // Processingクラス
         sketch = new Processing_LEVEL_APP();
+        //sketch.registerMethod("pre", sketch);
         final PFragment fragment = new PFragment(sketch);
         fragment.setView(Ppanel, this);
 
@@ -82,6 +84,7 @@ public final class MainActivity extends AppCompatActivity implements SensorEvent
         /* 広告設定 */
         MobileAds.initialize(this, getString(R.string.adsAppID));
         adView = findViewById(R.id.adView);
+
         final AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
     }

@@ -1,4 +1,4 @@
-package com.example.simplelevel;
+package shindy_works.simplelevel;
 
 import processing.core.PApplet;
 import processing.core.PGraphics;
@@ -30,9 +30,9 @@ public final class Processing_LEVEL_APP extends PApplet {
             Hmode = false, Vmode = false, Mmode = true; // モード
 
     /* サイズ */
+    private static int prevWidth, prevHeight;// 更新前のサイズ
     private float half_height;
     private int max_wh,  // 幅、高さの大きい方
-            prevWidth, prevHeight,  // 更新前のサイズ
             text_size, // 文字サイズ
             line_length; // 水平器使用時に表示する2本の線の長さ
 
@@ -156,7 +156,7 @@ public final class Processing_LEVEL_APP extends PApplet {
         moon.endDraw();
     }
 
-    public final void pre() {
+    public void pre() {
         if (prevWidth != width || prevHeight != height) {
             prevWidth = width;
             prevHeight = height;
@@ -188,11 +188,11 @@ public final class Processing_LEVEL_APP extends PApplet {
         if (Mmode) {
             if ((change_mode_rad1 < abs_radXYZ[1] && abs_radXYZ[1] < change_mode_rad2)
                     || (change_mode_rad1 < abs_radXYZ[2] && abs_radXYZ[2] < change_mode_rad2)) {
-                horizontal_level();
+                vertical_level();
                 lmBgUpper.resetLight();
                 lmBgLower.resetLight();
             } else {
-                vertical_level();
+                horizontal_level();
                 lmWater.resetLight();
             }
         } else if (Hmode) {
@@ -215,8 +215,8 @@ public final class Processing_LEVEL_APP extends PApplet {
             super.onPause();
     }
 
-    /* 水平器 */
-    private void horizontal_level() {
+    /*垂直持ち*/
+    private void vertical_level() {
         /* 計算処理 */
         float above_sea_level;
         if ((PI / 4 <= abs_radXYZ[0] && abs_radXYZ[0] <= 3 * PI / 4))
@@ -283,8 +283,8 @@ public final class Processing_LEVEL_APP extends PApplet {
         blendMode(BLEND);
     }
 
-    /* 垂直器 */
-    private void vertical_level() {
+    /* 水平持ち */
+    private void horizontal_level() {
 
         // xy平面での加速度が 45°～ 135°と 225°～ 315°を示した場合,yz平面の加速度の角度を用いる。
         // それ以外はxz平面の加速度の角度を用いる。

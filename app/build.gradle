@@ -1,15 +1,24 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\shinji\\Desktop\\android関連\\android開発\\keys\\simple_level\\key_store.jks')
+            storePassword '2m2s5781'
+            keyAlias = 'simple_level'
+            keyPassword 'kamehameha0810'
+        }
+    }
     compileSdkVersion 28
     buildToolsVersion "29.0.1"
     defaultConfig {
-        applicationId "com.example.simplelevel"
+        applicationId "shindy_works.simplelevel"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 1
+        versionCode 2
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
     }
     buildTypes {
         debug {
@@ -21,6 +30,7 @@ android {
             shrinkResources true // リソースの圧縮
             minifyEnabled true // コードの圧縮
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
         /* default
         release {
